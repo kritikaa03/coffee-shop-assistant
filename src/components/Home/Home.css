@@ -1,0 +1,106 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff9f5; /* Soft background color */
+  padding: 20px;
+  font-family: 'Arial', sans-serif; /* Clean font */
+}
+
+.hero-section {
+  display: flex; /* Use flex to align image and text side by side */
+  justify-content: center; /* Center the content */
+  align-items: center; /* Vertically align items */
+  width: 100%;
+  max-width: 1200px; /* Limit the max width for large screens */
+  overflow: hidden;
+  text-align: left; /* Align text to the left */
+}
+
+.hero-image {
+  width: 50%; /* Adjusted width for image */
+  height: auto;
+  filter: brightness(0.9); /* Slightly darken the image */
+  border-radius: 8px; /* Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  margin-right: 20px; /* Space between image and text */
+}
+
+.text-container {
+  max-width: 400px; /* Limit width of the text container */
+}
+
+.home-title {
+  color: #8b5a2b; /* Coffee color */
+  font-size: 3rem;
+  font-family: 'Georgia', serif; /* Use a fancier font */
+  font-weight: bold; /* Make the font bold */
+  margin: 0; /* Remove default margin */
+}
+
+.home-subtitle {
+  color: #8b5a2b; /* Coffee color */
+  font-size: 1.5rem;
+  font-family: 'Georgia', serif; /* Use a fancier font */
+  font-weight: 300; /* Light weight for subtitle */
+  margin-top: 10px; /* Add space above the subtitle */
+}
+
+.highlights {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.highlights-title {
+  font-size: 2.5rem;
+  color: #8b5a2b; /* Coffee color */
+}
+
+.highlights-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.highlight-item {
+  background-color: #fff; /* White background for items */
+  border-radius: 8px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.highlight-item:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+.images-section {
+  margin-top: 20px;
+}
+
+.pastry-image {
+  width: 100%;
+  max-width: 600px; /* Limit the max width for large screens */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 2s ease forwards;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Animation class */
+.animate {
+  animation: fadeIn 1s ease forwards;
+}

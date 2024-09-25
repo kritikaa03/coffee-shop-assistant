@@ -1,0 +1,5 @@
+.app-container {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f0; /* Light cream background */
+    min-height: 100vh;
+}
